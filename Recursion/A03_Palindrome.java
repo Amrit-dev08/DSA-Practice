@@ -1,7 +1,7 @@
 package Recursion;
 import java.util.Arrays;
 
-class Palindrome_03 {
+class A03_Palindrome {
 
     static int[] myFun(int[] arr, int l, int r) {
         if (l > r) {

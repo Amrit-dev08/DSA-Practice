@@ -1,6 +1,6 @@
 package Recursion;
 
-class Sum_of_N_Numbers_01 {
+class A01_Sum_of_N_Numbers {
     static int myFun(int n) {
         // base
         if (n == 0) {

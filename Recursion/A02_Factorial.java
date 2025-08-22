@@ -1,6 +1,6 @@
 package Recursion;
 
-class Recursion_02 {
+class A02_Factorial {
     static int myFun(int n) {
         // base
         if (n == 0) {
