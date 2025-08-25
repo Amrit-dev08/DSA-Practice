@@ -8,8 +8,6 @@ public class A12_FindingMaxFromArray {
         if (arr[i] > max) {
             max = arr[i];
         }
-        System.out.print(arr[i] + ", ");
-        System.out.println(max);
         return myFun(arr, i + 1, max);
     }
 
