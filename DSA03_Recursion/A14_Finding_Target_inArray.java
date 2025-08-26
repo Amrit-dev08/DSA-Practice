@@ -1,4 +1,4 @@
-package Recursion;
+package DSA03_Recursion;
 
 public class A14_Finding_Target_inArray {
     public static int myFun(int[] arr, int i, int target) {

@@ -1,4 +1,4 @@
-package Recursion;
+package DSA03_Recursion;
 
 public class A15_RemovingAllCharacterXfromA_String {
     public static String myFun(String str, int i, char ch) {

@@ -1,4 +1,4 @@
-package Recursion;
+package DSA03_Recursion;
 
 public class A06_Fibonacci__imp {
     static int[] myFun(int[] arr, int i, int current, int next) {

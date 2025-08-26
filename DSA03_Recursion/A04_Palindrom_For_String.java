@@ -1,4 +1,4 @@
-package Recursion;
+package DSA03_Recursion;
 
 public class A04_Palindrom_For_String {
     static String myFun(String str, int l, int r) {

@@ -1,4 +1,4 @@
-package Recursion;
+package DSA03_Recursion;
 
 class A10_SumOf_N_Numbers_with_AlternativeSign {
     static int myFun(int n, int sum) {

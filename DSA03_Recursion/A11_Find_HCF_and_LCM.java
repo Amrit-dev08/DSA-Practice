@@ -1,4 +1,4 @@
-package Recursion;
+package DSA03_Recursion;
 
 public class A11_Find_HCF_and_LCM {
     public static int findLCM(int dividend, int divisor) {

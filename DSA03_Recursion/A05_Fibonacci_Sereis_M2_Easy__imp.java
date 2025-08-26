@@ -1,7 +1,7 @@
 // ===== IMPORTANT NOTES ===== //
 // fib(n) = fib(n-1) + fib(n-2)
 
-package Recursion;
+package DSA03_Recursion;
 
 public class A05_Fibonacci_Sereis_M2_Easy__imp {
 
@@ -10,14 +10,18 @@ public class A05_Fibonacci_Sereis_M2_Easy__imp {
         if (i == arr.length) {
             return arr;
         }
-        if (i == 0) {
-            arr[i] = 0;
-        } else if (i == 1) {
-            arr[i] = 1;
-        } else {
-            arr[i] = s_last + last; // fib(n) = fib(n-1) + fib(n-2)
-            s_last = last;
-            last = arr[i];
+        switch (i) {
+            case 0:
+                arr[i] = 0;
+                break;
+            case 1:
+                arr[i] = 1;
+                break;
+            default:
+                arr[i] = s_last + last; // fib(n) = fib(n-1) + fib(n-2)
+                s_last = last;
+                last = arr[i];
+                break;
         }
         return myFun(arr, i + 1, s_last, last);
     }

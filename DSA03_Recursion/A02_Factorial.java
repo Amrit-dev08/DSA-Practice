@@ -1,4 +1,4 @@
-package Recursion;
+package DSA03_Recursion;
 
 class A02_Factorial {
     static int myFun(int n) {

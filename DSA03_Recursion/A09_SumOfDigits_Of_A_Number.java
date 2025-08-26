@@ -1,4 +1,4 @@
-package Recursion;
+package DSA03_Recursion;
 
 public class A09_SumOfDigits_Of_A_Number {
     public static int myFun(int num, int sum) {

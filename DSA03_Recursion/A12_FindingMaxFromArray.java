@@ -1,4 +1,4 @@
-package Recursion;
+package DSA03_Recursion;
 
 public class A12_FindingMaxFromArray {
     public static int myFun(int[] arr, int i, int max) {

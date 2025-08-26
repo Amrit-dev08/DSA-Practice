@@ -1,4 +1,4 @@
-package Recursion;
+package DSA03_Recursion;
 import java.util.Arrays;
 
 class A03_Palindrome {

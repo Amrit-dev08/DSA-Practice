@@ -1,4 +1,4 @@
-package Recursion;
+package DSA03_Recursion;
 
 public class A08_X_toPower_n {
     static int myFun(int x, int n) {

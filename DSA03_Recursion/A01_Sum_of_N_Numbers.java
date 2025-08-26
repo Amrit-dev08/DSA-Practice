@@ -1,4 +1,4 @@
-package Recursion;
+package DSA03_Recursion;
 
 class A01_Sum_of_N_Numbers {
     static int myFun(int n) {

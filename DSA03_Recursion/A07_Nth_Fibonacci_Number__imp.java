@@ -1,4 +1,4 @@
-package Recursion;
+package DSA03_Recursion;
 
 public class A07_Nth_Fibonacci_Number__imp {
 
