@@ -8,8 +8,6 @@
 /// Cloning --> HashSet<String> clone = (HashSet<String>) HashSetVarName.clone();
 /// Clearing --> clone.clear();
 
-package DSA04_Hashing;
-
 import java.util.HashSet;
 import java.util.Iterator;
 

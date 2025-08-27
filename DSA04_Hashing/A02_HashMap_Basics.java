@@ -13,8 +13,6 @@
 /// cloning --> HashMap<Integer, String> clonedMap = (HashMap<Integer, String>) HashMapVarName.clone();
 /// clearing --> clonedMap.clear();
 
-package DSA04_Hashing;
-
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
