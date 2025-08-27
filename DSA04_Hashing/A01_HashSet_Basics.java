@@ -1,3 +1,13 @@
+//// === NOTES === ////
+/// Create --> HashSet<String> HashSetVarName = new Hashset<>();
+/// Add --> HashSetVarName.add("Amrit")
+/// Find --> HashSetVarName.contains("Amrit")
+/// Remove --> HashSetVarName.remove("Amrit");
+/// size --> HashSetVarName.size()
+/// check isEmpty --> HashSetVarName.isEmpty()
+/// Cloning --> HashSet<String> clone = (HashSet<String>) HashSetVarName.clone();
+/// Clearing --> clone.clear();
+
 package DSA04_Hashing;
 
 import java.util.HashSet;
@@ -32,6 +42,12 @@ public class A01_HashSet_Basics {
             System.out.print(it.next() + ", ");
         }
 
+        // Print (M4 - Java 8 forEach)
+        System.out.println("\n=== (Java 8 forEach) ===");
+        names.forEach((name) -> {
+            System.out.println("Name: " + name);
+        });
+
         // Searching
         System.out.println("\n");
         System.out.println("=== Searching... ===");
@@ -54,10 +70,10 @@ public class A01_HashSet_Basics {
         // Update (remove+add)
         System.out.println();
         System.out.println("=== update \"Amrit\" to \"Amrit Anand\". ===");
-        System.out.println(names+" <-- Before Update");
+        System.out.println(names + " <-- Before Update");
         names.remove("Amrit");
         names.add("Amrit Anand");
-        System.out.println(names+" <-- After Update");
+        System.out.println(names + " <-- After Update");
 
         // Size
         System.out.println();
