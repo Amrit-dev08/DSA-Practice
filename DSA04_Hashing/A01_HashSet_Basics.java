@@ -86,6 +86,7 @@ public class A01_HashSet_Basics {
         // Clone the HashSet
         System.out.println();
         System.out.println("=== clone() ===");
+        @SuppressWarnings("unchecked")
         HashSet<String> clonedSet = (HashSet<String>) names.clone();
         System.out.println("Orignal HashSet: " + names);
         System.out.println("Cloned HashSet: " + clonedSet);
