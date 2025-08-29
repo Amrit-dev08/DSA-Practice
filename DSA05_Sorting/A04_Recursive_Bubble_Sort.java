@@ -1,5 +1,5 @@
 // Time Complexity → O(n²)
-// Space Complexity → O(1)
+// Space Complexity → O(n) (due to recursion stack)
 // compare with Adjacent and do Swapping upto less than n-1 repeatation.
 class A04_Recursive_Bubble_Sort {
     public static int[] myFun(int[] arr, int i) {

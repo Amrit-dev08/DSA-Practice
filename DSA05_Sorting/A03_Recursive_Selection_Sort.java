@@ -1,5 +1,5 @@
 // Time Complexity → O(n²) 
-// Space Complexity → O(1)
+// Space Complexity → O(n) (due to recursion stack)
 // Select minimum from UnSorted part and go to the Sorted part
 class A03_Recursive_Selection_Sort {
     public static int[] myFun(int[] arr, int i) {
