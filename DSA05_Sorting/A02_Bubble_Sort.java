@@ -1,20 +1,18 @@
-// Time Complexity → O(n²) 
+// Time Complexity → O(n²)
 // Space Complexity → O(1)
-// Select minimum from UnSorted part and go to the Sorted part
-class A01_Selection_Sort {
+// compare with Adjacent and do Swapping upto less than n-1 repeatation.
+class A02_Bubble_Sort {
     public static int[] myFun(int[] arr) {
         for (int i = 0; i < arr.length - 1; i++) {
-            int minIdx = i;
-            // loop for finding minimum
-            for (int j = i + 1; j < arr.length; j++) {
-                if (arr[j] < arr[minIdx]) {
-                    minIdx = j;
+            // for (int j = 0; j < arr.length - 1 - i; j++)
+            // for reduce unneccesary comparision bcs last (i) elements is already sorted
+            for (int j = 0; j < arr.length - 1; j++) {
+                if (arr[j] > arr[j + 1]) {
+                    int temp = arr[j];
+                    arr[j] = arr[j + 1];
+                    arr[j + 1] = temp;
                 }
             }
-            // swap arr[i] with arr[minIdx]
-            int temp = arr[minIdx];
-            arr[minIdx] = arr[i];
-            arr[i] = temp;
         }
         return arr;
     }
