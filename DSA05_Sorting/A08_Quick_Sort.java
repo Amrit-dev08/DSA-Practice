@@ -1,7 +1,9 @@
 // Lomuto Partition (last element pivot) --> pivot se chota dhundte jao and bade wale se swap karte jao jb tkk ki iteration khatam na ho jaye, and then swap your pivot to correct position and return the pivotIndex
 // Hoare Partition (first element pivot) --> ek infinite loop mai left pointer++ karte jao jbb tkk wo pivot se chota hai and right pointer-- karte jao jbb tkk wo pivot se bada hai. at the end agr(left >= right) ho gya to right return krdo warna left and right positioned element ko swap kardo.
+// Time Complexity:O(n log n)
+// Space Complexity:O(log n)
 
-class Test {
+class A08_Quick_Sort {
     public static int LomutoPartition(int[] arr, int low, int high) {
         int pivot = arr[high]; // pivot element (last element)
         int left = low - 1; // index of smaller element
