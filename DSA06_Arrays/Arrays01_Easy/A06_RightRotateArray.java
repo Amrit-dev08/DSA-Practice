@@ -1,29 +1,32 @@
-public class A05_LeftRotateArray {
+public class A06_RightRotateArray {
     public static void RotateArrayM1(int[] arr, int k) {
+        int n = arr.length;
         int temp[] = new int[k];
+        //copy last k elements to temp
         for (int i = 0; i < k; i++) {
-            temp[i] = arr[i];
+            temp[i] = arr[n - k + i];
         }
-        for (int i = k; i < arr.length; i++) {
-            arr[i - k] = arr[i];
+        //shift the first n-k elements to the right
+        for (int i = n - 1; i >= k; i--) {
+            arr[i] = arr[i - k];
         }
-        int tempCount = 0;
-        for (int i = arr.length - k; i < arr.length; i++) {
-            arr[i] = temp[tempCount];
-            tempCount++;
+        // Step 3: put temp at the front
+        for (int i = 0; i < k; i++) {
+            arr[i] = temp[i];
         }
     }
 
-    // for Left Rotation //
-    // reverse first k elements // reverse remaining n-k elements // reverse entire array
+    // for Right Rotation //
+    // reverse entire array // reverse first k elements // reverse remaining n-k
+    // elements
     public static void RotateArrayM2(int[] arr, int k) {
         int n = arr.length;
+        // reverse entire array
+        ReverseFun(arr, 0, n - 1);
         // reverse first k elements
         ReverseFun(arr, 0, k - 1);
         // reverse remaining n-k elements
         ReverseFun(arr, k, n - 1);
-        // reverse entire array
-        ReverseFun(arr, 0, n - 1);
     }
 
     public static void ReverseFun(int[] arr, int low, int high) {
@@ -38,7 +41,7 @@ public class A05_LeftRotateArray {
 
     public static void main(String[] args) {
         int arr[] = { 1, 2, 3, 4, 5 };
-        int k = 2;
+        int k = 3;
 
         // RotateArrayM1(arr, k); // M1 : uses an extra array
         RotateArrayM2(arr, k); // M2 : reversal algorithm (optimized)
